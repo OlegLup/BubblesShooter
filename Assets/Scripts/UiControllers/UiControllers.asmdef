@@ -1,0 +1,22 @@
+{
+    "name": "UiControllers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a395d09e5dc265b4e85fb60fb5ad5404",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:b63a4d1f7af731e45b0ed29a1c636d55",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:501df2c50f165ee4fa4e2f75bec71ecb",
+        "GUID:4a1cb1490dc4df8409b2580d6b44e75e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

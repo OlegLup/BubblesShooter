@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe23ef8b0e3efb44aeaf43e32e2dd65, type: 3}
+  m_Name: GameFieldSettings
+  m_EditorClassIdentifier: 
+  startPosition: {x: -3, y: 4, z: 0}
+  itemOffsets: {x: 1, y: 1}
+  topItemsToVictory: 3
+  itemDescriptors:
+  - itemType: 1
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - itemType: 2
+    color: {r: 0, g: 1, b: 0.16513157, a: 1}
+  - itemType: 3
+    color: {r: 1, g: 0.78564465, b: 0, a: 1}
+  - itemType: 4
+    color: {r: 0, g: 0.1117146, b: 1, a: 1}
