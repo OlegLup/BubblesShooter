@@ -4,6 +4,8 @@
     <img src="Assets/Sprites/Icon/icon.png" alt="Logo" width="80" height="80">
 
   <h3>Bubbles Shooter</h3>
+
+  <img src="screenshot_1.png">
 </div>
 
   This is simple demo project for portfolio.
