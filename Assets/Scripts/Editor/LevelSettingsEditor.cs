@@ -23,6 +23,8 @@ public class LevelSettingsEditor : EditorWindow
     private IntegerField shots;
     private List<VisualElement> itemRows;
 
+    private SerializedObject serializedData;
+
     public void CreateGUI()
     {
         VisualElement root = rootVisualElement;
@@ -37,6 +39,7 @@ public class LevelSettingsEditor : EditorWindow
 
         var objectFields = root.Query<ObjectField>();
         levelSettingsOjectField = objectFields.Name("Level");
+        levelSettingsOjectField.objectType = typeof(LevelSettings);
         levelSettingsOjectField.RegisterValueChangedCallback(OnLevelValueChanges);
 
         var intFields = root.Query<IntegerField>();
@@ -83,7 +86,8 @@ public class LevelSettingsEditor : EditorWindow
 
         levelSettings.shots = shots.value;
 
-        EditorUtility.SetDirty(levelSettings);
+        serializedData.FindProperty("shots").intValue = shots.value;
+        serializedData.ApplyModifiedProperties();
     }
 
     private void OnItemClick(ClickEvent evt)
@@ -95,7 +99,8 @@ public class LevelSettingsEditor : EditorWindow
         levelSettings.rows[h].items[w] = GetNextItemType(levelSettings.rows[h].items[w]);
         button.style.unityBackgroundImageTintColor = gameFieldSettings.GetItemColor(levelSettings.rows[h].items[w]);
 
-        EditorUtility.SetDirty(levelSettings);
+        serializedData.SetIsDifferentCacheDirty();
+        serializedData.ApplyModifiedProperties();
     }
 
     private bool IsLevelChoosen()
@@ -105,6 +110,9 @@ public class LevelSettingsEditor : EditorWindow
         if (levelSettingsOjectField.value != null && levelSettingsOjectField.value is LevelSettings)
         {
             levelSettings = levelSettingsOjectField.value as LevelSettings;
+
+            serializedData = new SerializedObject(levelSettings);
+
             return true;
         }
 
