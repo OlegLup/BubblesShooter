@@ -21,6 +21,26 @@ MonoBehaviour:
     m_Address: Assets/Scenes/RootScene.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: fe393ace9b354375a9cb14cdbbc28be4
+    m_Address: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e3265ab4bf004d28a9537516768c1c75
+    m_Address: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8378807d371fc264f9628946390df8d1
+    m_Address: Assets/Feel/MMFeedbacks/Demos/SequencingDemo/Sounds/MMSequencingClick.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 369e1bce1ebd2be41974676799a7cb2e
+    m_Address: Assets/Sprites/LoadingScreen/DarkStrokes_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 10ac9cacd5f3b204ab74b976c6af2d8b
+    m_Address: Assets/Sprites/Root/RootUiAtlas.spriteatlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 1fb89a81c1013c44b91c42eda4a65966, type: 2}
   m_SchemaSet:
