@@ -3,13 +3,17 @@ using Doozy.Runtime.UIManager.Components;
 using MoreMountains.Tools;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using VContainer;
 
 public class SettingsWindowUiController : MonoBehaviour
 {
     [SerializeField]
     private UIToggle soundToggle;
+    [SerializeField]
+    private UIToggleGroup languagesToggleGroup;
     [Inject]
     private GameData gameData;
     [Inject]
@@ -17,9 +21,24 @@ public class SettingsWindowUiController : MonoBehaviour
 
     void Start()
     {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[gameData.languageIndex];
+        var toggles = languagesToggleGroup.toggles.OrderBy(t => t.transform.GetSiblingIndex()).ToList();
+        for (int i = 0; i < toggles.Count; i++)
+        {
+            toggles[i].isOn = (i == gameData.languageIndex ? true : false);
+        }
+        languagesToggleGroup.OnToggleTriggeredCallback.AddListener(t => ApplyLanguage());
+
         soundToggle.isOn = !gameData.settingsData.sounds;
         ApplySounds(gameData.settingsData.sounds);
         soundToggle.OnValueChangedCallback.AddListener((s) => ApplySounds(!s));
+    }
+
+    private void ApplyLanguage()
+    {
+        var toggles = languagesToggleGroup.toggles.OrderBy(t => t.transform.GetSiblingIndex()).ToList();
+        gameData.languageIndex = toggles.FindIndex(t => t.isOn);
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[gameData.languageIndex];
     }
 
     private void ApplySounds(bool state)

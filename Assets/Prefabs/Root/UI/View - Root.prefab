@@ -239,6 +239,10 @@ PrefabInstance:
       propertyPath: m_OverrideSorting
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9143169346615963622, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 32311
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
 --- !u!1 &8731205569483219596 stripped

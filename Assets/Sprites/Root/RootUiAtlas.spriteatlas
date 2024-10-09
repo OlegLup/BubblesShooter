@@ -51,14 +51,20 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: d39501b085d2e4262864da757517d6dc, type: 3}
+  - {fileID: 21300000, guid: 52be2c042f5be0b44bb7cdf89338f3a5, type: 3}
   - {fileID: 21300000, guid: e2d51cb5c8d09dd44ba6cd5b53e49169, type: 3}
+  - {fileID: 21300000, guid: b43b30c66658fb041abbf3aeaaee0cf5, type: 3}
   - {fileID: 21300000, guid: 29a0c3f6530c748f0b85255e7f005e8c, type: 3}
   - {fileID: 21300000, guid: 7c4ed06ca329f4b68b133ca8791678d5, type: 3}
+  - {fileID: 21300000, guid: 288869bc1a498084db608039cbd43362, type: 3}
   m_PackedSpriteNamesToIndex:
   - UI_Icon_BtnPsCross
+  - Circle @ 64x64 - Stroke 4
   - Circle@16
+  - Flag_En
   - UI_Icon_SoundOn
   - UI_Icon_Settings
+  - Flag_Ru
   m_RenderDataMap: {}
   m_Tag: RootUiAtlas
   m_IsVariant: 0

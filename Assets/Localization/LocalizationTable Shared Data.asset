@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LocalizationTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LocalizationTable
+  m_TableCollectionNameGuidString: caf3e1f145bc3be479aa15b244e72d52
+  m_Entries:
+  - m_Id: 1537277747200
+    m_Key: View - Loading/Canvas (Environment)/View - Loading/Content/Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1830895804416
+    m_Key: View - Settings/Canvas (Environment)/View - Settings/Content/Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1918888108032
+    m_Key: View - Settings/Canvas (Environment)/View - Settings/Content/Button -
+      MainMenu/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2067123200000
+    m_Key: View - Settings/Canvas (Environment)/View - Settings/Content/Button -
+      Quit/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2960694501376
+    m_Key: View - MainMenu/Canvas (Environment)/View - MainMenu/Content/Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3085319856128
+    m_Key: View - MainMenu/Canvas (Environment)/View - MainMenu/Content/Button -
+      Play/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3134984609792
+    m_Key: View - MainMenu/Canvas (Environment)/View - MainMenu/Content/Button -
+      Quit/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3506297954304
+    m_Key: View - Core/Canvas (Environment)/View - Core/Content/Score/Label - Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3716566802432
+    m_Key: View - Defeat/Canvas (Environment)/View - Defeat/Content/Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3761747845120
+    m_Key: View - Defeat/Canvas (Environment)/View - Defeat/Content/Button - PlayAgain/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3792538230784
+    m_Key: View - Defeat/Canvas (Environment)/View - Defeat/Content/Button - MainMenu/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4165520908288
+    m_Key: View - Victory/Canvas (Environment)/View - Victory/Content/Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4235775500288
+    m_Key: View - Victory/Canvas (Environment)/View - Victory/Content/Button - NextLevel/Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4286396555264
+    m_Key: View - Victory/Canvas (Environment)/View - Victory/Content/Button - MainMenu/Label
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 150907084243206168
+  references:
+    version: 2
+    RefIds:
+    - rid: 150907084243206168
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1728466746628

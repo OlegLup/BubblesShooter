@@ -47,6 +47,7 @@ MonoBehaviour:
     - MoreMountains.Feedbacks.TextMeshPro
     - MoreMountains.Feedbacks.URP
     - MoreMountains.Tools
+    - Sirenix.OdinInspector.Modules.UnityLocalization
     - UiControllers
     - UniTask
     - UniTask.Addressables

@@ -451,8 +451,66 @@ PrefabInstance:
       propertyPath: m_OverrideSorting
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9143169346615963622, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 32311
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
+--- !u!114 &1114615187532096879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 596863389557481957, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
+  m_PrefabInstance: {fileID: 522299413500609674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883550026959368312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4883550026959368312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4970371367604745458, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
+  m_PrefabInstance: {fileID: 522299413500609674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5811063803139349061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883550026959368312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 150907084243206171
+  references:
+    version: 2
+    RefIds:
+    - rid: 150907084243206171
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1114615187532096879}
+        m_TrackedProperties:
+          items:
+          - rid: 150907084243206172
+        m_UpdateType: 0
+    - rid: 150907084243206172
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:caf3e1f145bc3be479aa15b244e72d52
+          m_TableEntryReference:
+            m_KeyId: 1537277747200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!114 &7013593523735962163 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7379955764705257145, guid: a797dc96a80e62545b57e48688f6a914, type: 3}

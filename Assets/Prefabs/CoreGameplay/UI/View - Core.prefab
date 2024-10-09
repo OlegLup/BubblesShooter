@@ -931,6 +931,7 @@ GameObject:
   - component: {fileID: 1520200890}
   - component: {fileID: 1520200892}
   - component: {fileID: 1520200891}
+  - component: {fileID: 7888345722790036133}
   m_Layer: 5
   m_Name: Label - Text (TMP)
   m_TagString: Untagged
@@ -1019,7 +1020,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1055,6 +1056,44 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7888345722790036133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520200889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 150907084243206185
+  references:
+    version: 2
+    RefIds:
+    - rid: 150907084243206185
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1520200891}
+        m_TrackedProperties:
+          items:
+          - rid: 150907084243206186
+        m_UpdateType: 0
+    - rid: 150907084243206186
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:caf3e1f145bc3be479aa15b244e72d52
+          m_TableEntryReference:
+            m_KeyId: 3506297954304
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &7655557424468421378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1625,10 @@ PrefabInstance:
     - target: {fileID: 7379955764705257145, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
       propertyPath: Behaviours.Behaviours.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143169346615963622, guid: a797dc96a80e62545b57e48688f6a914, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 32311
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a797dc96a80e62545b57e48688f6a914, type: 3}

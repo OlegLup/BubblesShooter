@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1368144670}
     m_Modifications:
+    - target: {fileID: 809429423057870440, guid: 3614256aaf4cb514caf48aca14fcab5a, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 32311
+      objectReference: {fileID: 0}
     - target: {fileID: 5062711788763666378, guid: 3614256aaf4cb514caf48aca14fcab5a, type: 3}
       propertyPath: m_Name
       value: View - Core
@@ -825,6 +829,10 @@ PrefabInstance:
     - target: {fileID: 3955894084743533502, guid: e772998157538344dae857e3d5231047, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048506753522546761, guid: e772998157538344dae857e3d5231047, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 32311
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e772998157538344dae857e3d5231047, type: 3}
