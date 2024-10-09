@@ -30,4 +30,5 @@
   8. Project has two game levels. There is UiToolkit->LevelSettingsEditor (editor window for LevelSettings) to help configure game field for each level.
   9. For demonstration purposes project uses Addressables. Root, MainMenu and Core scenes loads as addressables (it may used to reduce build size when assets distribute from cloud). LevelSettings are adreesables configs, only needed config take place in RAM (it may reduce RAM usage on project grow).
   10. For most VFXs FEEL asset is used. There is no VFXs code inside Gameplay features scripts.
-  11. Total list of tools used in project: Addressables, Doozy, Feel, EpicToonFX, DOTween, EasySave3, OdinInspector, UniTask, VContainer.
+  11. Unity Localization package is used to localize texts (en-ru)
+  12. Total list of tools used in project: Addressables, Doozy, Feel, EpicToonFX, DOTween, EasySave3, OdinInspector, UniTask, VContainer, Unity Localization
