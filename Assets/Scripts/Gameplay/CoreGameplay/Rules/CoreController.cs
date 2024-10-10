@@ -4,22 +4,14 @@ using Player;
 using System;
 using System.Threading.Tasks;
 using VContainer;
+using UniRx;
 
 namespace Rules
 {
     public class CoreController
     {
-        public int Score
-        {
-            get => score;
-            private set
-            {
-                score = value;
-                OnScoreChange?.Invoke();
-            }
-        }
+        public IntReactiveProperty Score { get; private set; } = new();
 
-        private int score;
         [Inject]
         private GameData gameData;
         [Inject]
@@ -35,7 +27,6 @@ namespace Rules
 
         public event Action OnDefeat;
         public event Action OnVictory;
-        public event Action OnScoreChange;
 
         public CoreController()
         {
@@ -90,7 +81,7 @@ namespace Rules
                     gameField.RemoveItem(notConnected);
                 }
 
-                Score += matched.Count;
+                Score.Value += matched.Count;
                 playerItemQueue.IncreaseItemsRemain();
             }
 
@@ -128,7 +119,7 @@ namespace Rules
 
         private bool CheckGameEndConditions()
         {
-            if (playerItemQueue.ItemsRemain <= 0)
+            if (playerItemQueue.ItemsRemain.Value <= 0)
             {
                 GameDefeat();
                 return true;

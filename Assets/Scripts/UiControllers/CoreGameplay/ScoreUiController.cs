@@ -4,6 +4,7 @@ using UnityEngine;
 using VContainer;
 using Doozy.Runtime.Reactor;
 using Doozy.Runtime.Reactor.Animators;
+using UniRx;
 
 namespace Rules
 {
@@ -18,14 +19,14 @@ namespace Rules
 
         private void Start()
         {
-            coreRules.OnScoreChange += UpdateScore;
-            scoreProgressor.SetValueAt(coreRules.Score);
+            scoreProgressor.SetValueAt(coreRules.Score.Value);
+            coreRules.Score.Subscribe(UpdateScore);
         }
 
-        private void UpdateScore()
+        private void UpdateScore(int score)
         {
             scoreProgressor.fromValue = scoreProgressor.toValue;
-            scoreProgressor.toValue = coreRules.Score;
+            scoreProgressor.toValue = score;
             scoreProgressor.Play();
             uIanimator.Play();
         }

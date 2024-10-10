@@ -1,19 +1,18 @@
 using Items;
 using System;
 using VContainer;
+using UniRx;
 
 namespace Player
 {
     public class PlayerItemQueue
     {
-        public int ItemsRemain { get; private set; }
+        public IntReactiveProperty ItemsRemain { get; private set; } = new();
         public ItemType CurrentItemType { get; private set; } = ItemType.None;
         public ItemType NextItemType { get; private set; } = ItemType.None;
 
         [Inject]
         private RootSettings rootSettings;
-
-        public event Action OnDataChange;
 
         public PlayerItemQueue()
         {
@@ -24,20 +23,18 @@ namespace Player
         {
             RandomizeItem(); // Next item
             RandomizeItem(); // Current item
-            ItemsRemain = rootSettings.levelSettings.shots;
+            ItemsRemain.Value = rootSettings.levelSettings.shots;
         }
 
         public void NextItem()
         {
             RandomizeItem();
-            ItemsRemain--;
-            OnDataChange.Invoke();
+            ItemsRemain.Value--;
         }
 
         public void IncreaseItemsRemain()
         {
-            ItemsRemain++;
-            OnDataChange.Invoke();
+            ItemsRemain.Value++;
         }
 
         private void RandomizeItem()

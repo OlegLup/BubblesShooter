@@ -3,6 +3,7 @@ using GameField;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
@@ -24,14 +25,14 @@ namespace Player
 
         private void Start()
         {
-            UpdateUi();
-            playerItemQueue.OnDataChange += UpdateUi;
+            UpdateUi(playerItemQueue.ItemsRemain.Value);
+            playerItemQueue.ItemsRemain.Subscribe(UpdateUi);
         }
 
-        private void UpdateUi()
+        private void UpdateUi(int itemsRemain)
         {
             shotImage.color = coreSettings.gameFieldSettings.GetItemColor(playerItemQueue.NextItemType);
-            shotsRemainText.text = playerItemQueue.ItemsRemain.ToString("D");
+            shotsRemainText.text = itemsRemain.ToString("D");
             uIAnimator.Play();
         }
     }

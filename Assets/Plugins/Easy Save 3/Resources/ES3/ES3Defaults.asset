@@ -49,6 +49,7 @@ MonoBehaviour:
     - MoreMountains.Tools
     - Sirenix.OdinInspector.Modules.UnityLocalization
     - UiControllers
+    - UniRx
     - UniTask
     - UniTask.Addressables
     - UniTask.DOTween
