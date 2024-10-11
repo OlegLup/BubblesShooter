@@ -5,6 +5,8 @@
 
   <h3>Bubbles Shooter</h3>
 
+  [Download Build](https://github.com/OlegLup/BubblesShooter/blob/main/BUILD_ZIP.zip)
+
   <img src="screenshot_1.png">
 </div>
 
