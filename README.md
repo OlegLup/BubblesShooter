@@ -35,4 +35,5 @@
   11. For demonstration purposes project uses Addressables. Root, MainMenu and Core scenes loads as addressables (it may used to reduce build size when assets distribute from cloud). LevelSettings are adreesables configs, only needed config take place in RAM (it may reduce RAM usage on project grow).
   12. For most VFXs FEEL asset is used. There is no VFXs code inside Gameplay features scripts.
   13. Unity Localization package is used to localize texts (en-ru)
-  14. Total list of tools used in project: Addressables, Doozy, Feel, DOTween, EasySave3, OdinInspector, UniRx, UniTask, VContainer, Unity Localization
+  14. SRDebugger is used for in-game Debug Console and Cheat Panel (double click on top left corner)
+  15. Total list of tools used in project: Addressables, Doozy, Feel, DOTween, EasySave3, OdinInspector, UniRx, UniTask, VContainer, Unity Localization
