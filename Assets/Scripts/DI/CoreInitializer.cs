@@ -21,6 +21,8 @@ public class CoreInitializer : IStartable
     private PlayerItem playerItem;
     [Inject]
     private CoreController coreRules;
+    [Inject]
+    private DebugPanelCore debugPanelCore;
 
 
     void IStartable.Start()
@@ -31,5 +33,6 @@ public class CoreInitializer : IStartable
         playerShotTrajectory.Init();
         playerItem.Init();
         coreRules.Init();
+        debugPanelCore.Init();
     }
 }

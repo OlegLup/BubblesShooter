@@ -48,6 +48,9 @@ MonoBehaviour:
     - MoreMountains.Feedbacks.URP
     - MoreMountains.Tools
     - Sirenix.OdinInspector.Modules.UnityLocalization
+    - StompyRobot.SRDebugger
+    - StompyRobot.SRF
+    - StompyRobot.SROptions
     - UiControllers
     - UniRx
     - UniTask

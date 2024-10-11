@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using Data;
 using Doozy.Runtime.UIManager.Components;
 using MoreMountains.Tools;
@@ -21,6 +22,17 @@ public class SettingsWindowUiController : MonoBehaviour
 
     void Start()
     {
+        LocalizationInitTask();
+
+        soundToggle.isOn = !gameData.settingsData.sounds;
+        ApplySounds(gameData.settingsData.sounds);
+        soundToggle.OnValueChangedCallback.AddListener((s) => ApplySounds(!s));
+    }
+
+    private async void LocalizationInitTask()
+    {
+        await LocalizationSettings.InitializationOperation;
+
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[gameData.languageIndex];
         var toggles = languagesToggleGroup.toggles.OrderBy(t => t.transform.GetSiblingIndex()).ToList();
         for (int i = 0; i < toggles.Count; i++)
@@ -28,10 +40,6 @@ public class SettingsWindowUiController : MonoBehaviour
             toggles[i].isOn = (i == gameData.languageIndex ? true : false);
         }
         languagesToggleGroup.OnToggleTriggeredCallback.AddListener(t => ApplyLanguage());
-
-        soundToggle.isOn = !gameData.settingsData.sounds;
-        ApplySounds(gameData.settingsData.sounds);
-        soundToggle.OnValueChangedCallback.AddListener((s) => ApplySounds(!s));
     }
 
     private void ApplyLanguage()

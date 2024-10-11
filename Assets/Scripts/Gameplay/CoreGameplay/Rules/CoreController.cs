@@ -138,7 +138,7 @@ namespace Rules
             OnDefeat?.Invoke();
         }
 
-        private void GameVictory()
+        public void GameVictory()
         {
             gameData.progressData.levelIndex++;
             OnVictory?.Invoke();

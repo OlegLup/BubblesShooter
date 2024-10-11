@@ -23,6 +23,7 @@ public class CoreLifetimeScope : LifetimeScope
         builder.Register<PlayerItemQueue>(Lifetime.Singleton);
         builder.RegisterComponentInHierarchy<PlayerItem>();
         builder.Register<CoreController>(Lifetime.Singleton);
+        builder.Register<DebugPanelCore>(Lifetime.Singleton);
 
         builder.RegisterComponentInHierarchy<CoreGameplayWindowUiController>();
         builder.RegisterComponentInHierarchy<PlayerItemQueueUiController>();
